@@ -60,13 +60,14 @@ header nav ul li a:hover {
 }
 
 .stars {
+    display: flex;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background: url('./images/stars.png');
-    z-index: -1;
+    z-index: -3;
     animation: twinkling 8s infinite;
 }
 
@@ -191,3 +192,10 @@ header nav ul li a:hover {
     width: 300px; /* Adjust width as needed */
     height: auto; /* Maintain aspect ratio */
 }
+img {
+    max-width: 80%; /* Makes the image responsive */
+    height: 80%;
+    border-radius: 10%; /* Gives the image a circular shape */
+    display: block;
+    margin: 0 auto; /* Center the image */
+  }
